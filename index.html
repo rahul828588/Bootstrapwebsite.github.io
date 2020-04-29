@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Bootstrap Website</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			*{
+		margin: 0; padding: 0;
+		box-sizing: border-box;
+		font-family: 'Josefin Sans', sans-serif;
+		}
+		/* Make the image fully responsive */
+		.carousel-inner img {
+		width: 100%;
+		height: 100%;
+		}
+		.about-part1, .about-part2, .service-part1, .service-part2, .service-part3, .gal-animation{
+			opacity: 0;
+		}
+		.about-part1.animated,  .about-part2.animated, .service-part1.animated, .service-part2.animated, .service-part3.animated, .gal-animation.animated{
+			opacity: 1;
+		}
+		.gal-part2{
+			animation-delay: 0.3s;
+		}
+			.gal-part3{
+			animation-delay: 0.6s;
+		}
+			.gal-part4{
+			animation-delay: 0.9s;
+		}
+			.gal-part5{
+			animation-delay: 1.2s;
+		}
+			.gal-part6{
+			animation-delay: 1.5s;
+		}
+			.gal-part7{
+			animation-delay: 1.8s;
+		}
+			.gal-part8{
+			animation-delay: 2.1s;
+		}
+			.gal-part9{
+			animation-delay: 2.4s;
+		}
+		</style>
+	</head>
+	<body>
+		<header >
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand mx-5" href="#">Technical</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active ">
+							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#gallery">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Location">Location</a>
+						</li>
+						
+						
+						
+					</ul>
+					
+				</div>
+			</nav>
+			
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/bg.jpg" alt="Los Angeles" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3>Los Angeles</h3>
+							<p>We had such a great time in LA!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/bg.jpg" alt="Chicago" width="1100" height="500">
+						<div class="carousel-caption ">
+							<h3>Chicago</h3>
+							<p>Thank you, Chicago!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/bg.jpg" alt="New York" width="1100" height="500">
+						<div class="carousel-caption">
+							<h3>New York</h3>
+							<p>We love the Big Apple!</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+			
+			
+		</header>
+		<!-- About us -->
+		<section>
+			
+			<div class="container">
+				<h1 class="text-center pt-5">About Us</h1>
+				<hr class="w-25 mx-auto pt-4">
+				
+				<div class="row mb-5">
+					<div class="col-lg-6 col-md-6 col-12 about-part1" >
+						<img src="img/bg.jpg" class="img-fluid">
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-12 about-part2">
+						<h1 > Who am I?</h1>
+						<hr>
+						<p>I would like to work with the company that provides a platform to Enhance new skills while utilizing my present knowledge and use my ability to work in the team appropriately.I would like to work with the company that provides a platform to Enhance new skills while utilizing my present knowledge and use my ability to work in the team appropriately.I would like to work with the company that provides a platform to Enhance new skills </p>
+						<button class="btn bg-primary text-white">Wanna Know Me</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- about us end -->
+		<!-- Service Start -->
+		<section>
+			<div class="container">
+				<h1 class="text-center pt-5">Services</h1>
+				<hr class="w-25 mx-auto pt-5">
+				
+				
+				<div class="row text-center">
+					<div class="col-lg-4 col-md-4 col-12 service-part1">
+						
+						<div class="card" >
+							<img class="card-img-top" src="img/bg.jpg" alt="Card image">
+							<div class="card-body">
+								<h4 class="card-title">John Doe</h4>
+								<p class="card-text">Some example text.</p>
+								<a href="#" class="btn btn-primary">See Profile</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 service-part2">
+						<div class="card">
+							<img class="card-img-top" src="img/bg.jpg" alt="Card image">
+							<div class="card-body">
+								<h4 class="card-title">John Doe</h4>
+								<p class="card-text">Some example text.</p>
+								<a href="#" class="btn btn-primary">See Profile</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 service-part3">
+						<div class="card" >
+							<img class="card-img-top" src="img/bg.jpg" alt="Card image">
+							<div class="card-body">
+								<h4 class="card-title">John Doe</h4>
+								<p class="card-text">Some example text.</p>
+								<a href="#" class="btn btn-primary">See Profile</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services end -->
+		<!-- contact us start -->
+		<section class="bg-primary mb-5 mt-5">
+			<article class="py-5 text-center">
+				<h3 class="text-white display-4">+91 123456789		</h3>
+				<div class="text-white">If you want best service call us now
+				</div>
+				<button class="btn btn-warning">Contact Now</button>
+			</article>
+		</section>
+		<!-- contact us end -->
+		<!-- gallery start -->
+		<section>
+			<div class="container" id="gallery">
+				<h1 class="text-center pt-5">Gallery</h1>
+				<hr class="w-25 mx-auto pt-5">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part1">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part2">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part3">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part4">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part5">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part6">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part7">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part8">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 mb-4 gal-animation gal-part9">
+						<img src="img/bg.jpg " class="img-fluid img-thumbnail">
+					</div>
+				</div>
+			</section>
+			<!-- gallery end -->
+			<!-- Register start -->
+			<section class="bg-primary mb-4">
+				<article class="py-4 text-center">
+					<div>
+						<h3 class="text-white display-4">Want To Join	</h3>
+						<p class="text-white ">Be a part of our family
+						</p>
+						<button class="btn btn-warning data-toggle="modal" data-target="#myModal">Join Now</button>
+					</div>
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+								
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Modal Heading</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								
+								<!-- Modal body -->
+								<div class="modal-body">
+									Modal body..
+								</div>
+								
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+									</button>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- Register end -->
+			<!-- contact us  -->
+			<section>
+				<div class="container mb-5" id="contact">
+					<h1 class="text-center pt-5">Contact Us</h1>
+					<hr class="w-25 mx-auto pt-3">
+					<div class="w-50 mx-auto">
+						<form action="info.php">
+							<div class="form-group">
+								<label for="text">First Name</label>
+								<input type="text" class="form-control" placeholder="Enter First name" id="">
+							</div>
+							<div class="form-group">
+								<label for="text">Last Name</label>
+								<input type="text" class="form-control" placeholder="Enter Last name" id="">
+							</div>
+							<div class="form-group">
+								<label for="number">Mobile No :</label>
+								<input type="number" class="form-control" placeholder="Enter your Mobile No" id="">
+							</div>
+							<div class="form-group">
+								<label for="Email">Email id :</label>
+								<input type="Email" class="form-control" placeholder="Enter Your Email id" id="">
+							</div>
+							<div class="form-group">
+								<label>Message :</label>
+								<textarea class="form-control"></textarea>
+								
+							</div>
+							<div class="form-group form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox"> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+				</section>
+				<!-- contact us end -->
+				<!-- google map -->
+				<section id="Location">
+					<div class="container mb-5">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56158.58364947273!2d77.26489068861628!3d28.391741531582266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddcd5387a551%3A0x7d7b8952cfef9ad9!2sNew%20Industrial%20Town%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1578978311780!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</section>
+				<!-- google map end -->
+				<!-- footer start -->
+				<footer>
+					
+					<p class="bg-dark text-center text-white">@Copyright by Rahul Bisht 2020</p>
+				</footer>
+				<!-- footer end -->
+				
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+				<script>
+				// AOS.init({
+				// 	  duration: 1200,
+				// once: true,
+				// });
+				$(document).ready(function(){
+				$('.about-part1').waypoint(function(direction){
+				$('.about-part1').addClass('animated zoomIn')
+				},{
+				offset:'300px'
+				});
+				$('.about-part2').waypoint(function(direction){
+				$('.about-part2').addClass('animated fadeInUp')
+				},{
+				offset:'300px'
+				});
+
+// *****************service part start**********************
+				$('.service-part1').waypoint(function(direction){
+				$('.service-part1').addClass('animated fadeInLeft')
+				},{
+				offset:'300px'
+				});
+
+				$('.service-part2').waypoint(function(direction){
+				$('.service-part2').addClass('animated fadeInUp')
+				},{
+				offset:'300px'
+				});
+
+				$('.service-part3').waypoint(function(direction){
+				$('.service-part3').addClass('animated fadeInRight')
+				},{
+				offset:'300px'
+				});
+	// ***********************service part end********************
+	// ***********************gallery part start**********
+				$('.gal-animation').waypoint(function(direction){
+				$('.gal-animation').addClass('animated zoomIn')
+				},{
+				offset:'300px'
+				});
+
+
+
+
+	// ************************gallery part end******************
+				})
+				</script>
+				
+			</body>
+		</html>
